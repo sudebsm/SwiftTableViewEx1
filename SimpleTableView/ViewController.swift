@@ -11,10 +11,6 @@ import UIKit
 class ViewController : UIViewController ,UITableViewDataSource , UITableViewDelegate {
     @IBOutlet weak var tableview: UITableView!
     
-    
-   
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,18 +26,14 @@ class ViewController : UIViewController ,UITableViewDataSource , UITableViewDele
         
         let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.default,reuseIdentifier: "mycell")
         cell.textLabel?.text="Sudeb Sarkar"
-//        cell.detailTextLabel?.text=" jhdkjfhsdfs ksfkhfhs fhskfks hfksd fs dksfdkskfsdhsd hsubtitle#\(indexPath.row)"
-        
+
         return cell
     }
-    
     
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
         return 5
     }
-
-    
     
 }
 
